@@ -1,0 +1,6 @@
+# Arquivos-fonte locais que nao fazem parte do site publicado.
+ChatGPT Image*.png
+WhatsApp Image*.jpeg
+
+# Artefato local temporario, caso o workflow seja reproduzido manualmente.
+_site/
