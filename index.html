@@ -178,49 +178,135 @@
           <div class="section-heading reveal">
             <p class="eyebrow">Especialidades</p>
             <h2 id="servicos-title">Nossos serviços</h2>
-            <p>Procedimentos pensados para destacar sua beleza com equilíbrio, precisão e naturalidade.</p>
+            <p>Dez procedimentos pensados para destacar sua beleza com equilíbrio, precisão e naturalidade.</p>
           </div>
 
-          <div class="services-grid">
-            <article class="service-card reveal">
-              <div class="service-image"><img src="assets/images/servico-sobrancelhas.jpg" alt="Design de sobrancelhas com acabamento natural" width="191" height="118" loading="lazy" /></div>
+          <div class="service-filters reveal" role="group" aria-label="Filtrar serviços por categoria">
+            <button class="service-filter is-active" type="button" data-filter="todos" aria-pressed="true">Todos <span>10</span></button>
+            <button class="service-filter" type="button" data-filter="sobrancelhas" aria-pressed="false">Sobrancelhas <span>5</span></button>
+            <button class="service-filter" type="button" data-filter="cilios" aria-pressed="false">Cílios <span>5</span></button>
+          </div>
+          <p class="filter-status" aria-live="polite" data-filter-status>Exibindo todos os 10 serviços.</p>
+
+          <div class="services-grid" data-services-grid>
+            <article class="service-card reveal" data-category="sobrancelhas">
+              <div class="service-image"><img src="assets/images/servico-design-sobrancelhas-v2.jpg" alt="Resultado de design personalizado de sobrancelhas" width="915" height="1280" loading="lazy" /></div>
               <div class="service-content">
                 <span class="service-index">01</span>
+                <span class="service-category">Sobrancelhas</span>
                 <h3>Design de Sobrancelhas</h3>
-                <p>Mapeamento cuidadoso para equilibrar seus traços e criar sobrancelhas perfeitas para o seu rosto.</p>
-                <a class="text-link" href="#agendamento" data-service="Design de Sobrancelhas">Saiba mais <svg aria-hidden="true"><use href="#icon-arrow" /></svg></a>
+                <p>Design personalizado com medidas precisas, feito com pinça, linha e/ou navalha, preservando a identidade natural de cada sobrancelha.</p>
+                <a class="text-link" href="#agendamento" data-service="Design de Sobrancelhas">Quero agendar <svg aria-hidden="true"><use href="#icon-arrow" /></svg></a>
               </div>
             </article>
 
-            <article class="service-card reveal">
-              <div class="service-image"><img src="assets/images/servico-labios.jpg" alt="Aplicação de micropigmentação labial" width="191" height="118" loading="lazy" /></div>
+            <article class="service-card reveal" data-category="sobrancelhas">
+              <div class="service-image"><img src="assets/images/servico-design-henna.jpg" alt="Resultado de design de sobrancelhas com henna" width="1095" height="1280" loading="lazy" /></div>
               <div class="service-content">
                 <span class="service-index">02</span>
-                <h3>Micropigmentação Labial</h3>
-                <p>Contorno definido e cor equilibrada para lábios bonitos, harmônicos e naturalmente realçados.</p>
-                <a class="text-link" href="#agendamento" data-service="Micropigmentação Labial">Saiba mais <svg aria-hidden="true"><use href="#icon-arrow" /></svg></a>
+                <span class="service-category">Sobrancelhas</span>
+                <h3>Design com Henna</h3>
+                <p>Design personalizado com aplicação de henna para cobrir temporariamente as falhas e valorizar o formato das sobrancelhas.</p>
+                <span class="service-duration"><svg aria-hidden="true"><use href="#icon-clock" /></svg>Durabilidade média de 7 dias</span>
+                <a class="text-link" href="#agendamento" data-service="Design com Henna">Quero agendar <svg aria-hidden="true"><use href="#icon-arrow" /></svg></a>
               </div>
             </article>
 
-            <article class="service-card reveal">
-              <div class="service-image"><img src="assets/images/servico-delineado.jpg" alt="Olho com delineado preciso" width="191" height="118" loading="lazy" /></div>
+            <article class="service-card reveal" data-category="sobrancelhas">
+              <div class="service-image"><img src="assets/images/servico-tintura-coloracao.jpg" alt="Resultado de coloração dos pelos das sobrancelhas" width="1280" height="1026" loading="lazy" /></div>
               <div class="service-content">
                 <span class="service-index">03</span>
-                <h3>Delineado a Laser</h3>
-                <p>Olhar marcante todos os dias, com desenho personalizado, praticidade e segurança.</p>
-                <a class="text-link" href="#agendamento" data-service="Delineado a Laser">Saiba mais <svg aria-hidden="true"><use href="#icon-arrow" /></svg></a>
+                <span class="service-category">Sobrancelhas</span>
+                <h3>Tintura/Coloração</h3>
+                <p>Coloração específica para encorpar os pelos, criar um efeito natural e cobrir fios brancos.</p>
+                <span class="service-duration"><svg aria-hidden="true"><use href="#icon-clock" /></svg>4 dias na pele · até 30 nos pelos</span>
+                <a class="text-link" href="#agendamento" data-service="Tintura/Coloração">Quero agendar <svg aria-hidden="true"><use href="#icon-arrow" /></svg></a>
               </div>
             </article>
 
-            <article class="service-card reveal">
-              <div class="service-image"><img src="assets/images/servico-pele.jpg" alt="Procedimento de limpeza de pele" width="222" height="118" loading="lazy" /></div>
+            <article class="service-card reveal" data-category="sobrancelhas">
+              <div class="service-image"><img src="assets/images/servico-nano-fios.jpg" alt="Resultado realista de micropigmentação Nano Fios" width="960" height="1280" loading="lazy" /></div>
               <div class="service-content">
                 <span class="service-index">04</span>
-                <h3>Limpeza de Pele</h3>
-                <p>Protocolo completo para uma pele limpa, saudável, luminosa e visivelmente renovada.</p>
-                <a class="text-link" href="#agendamento" data-service="Limpeza de Pele">Saiba mais <svg aria-hidden="true"><use href="#icon-arrow" /></svg></a>
+                <span class="service-category">Micropigmentação</span>
+                <h3>Nano Fios</h3>
+                <p>Micropigmentação realista com fios desenhados manualmente para corrigir falhas sem perder naturalidade e realismo.</p>
+                <a class="text-link" href="#agendamento" data-service="Nano Fios">Quero agendar <svg aria-hidden="true"><use href="#icon-arrow" /></svg></a>
               </div>
             </article>
+
+            <article class="service-card reveal" data-category="sobrancelhas">
+              <div class="service-image"><img src="assets/images/servico-brow-lamination.jpg" alt="Resultado de Brow Lamination com fios alinhados" width="1280" height="720" loading="lazy" /></div>
+              <div class="service-content">
+                <span class="service-index">05</span>
+                <span class="service-category">Sobrancelhas</span>
+                <h3>Brow Lamination</h3>
+                <p>Laminação que alinha e define os fios, preenche visualmente as falhas e facilita o penteado no dia a dia.</p>
+                <span class="service-duration"><svg aria-hidden="true"><use href="#icon-clock" /></svg>Durabilidade média de 30 dias</span>
+                <a class="text-link" href="#agendamento" data-service="Brow Lamination">Quero agendar <svg aria-hidden="true"><use href="#icon-arrow" /></svg></a>
+              </div>
+            </article>
+
+            <article class="service-card reveal" data-category="cilios">
+              <div class="service-image"><img src="assets/images/servico-lash-lifting.jpg" alt="Comparação antes e depois do Lash Lifting" width="1254" height="1254" loading="lazy" /></div>
+              <div class="service-content">
+                <span class="service-index">06</span>
+                <span class="service-category">Cílios</span>
+                <h3>Lash Lifting</h3>
+                <p>Procedimento nos cílios naturais que proporciona cor e curvatura, sem necessidade de manutenção.</p>
+                <span class="service-duration"><svg aria-hidden="true"><use href="#icon-clock" /></svg>Durabilidade de até 30 dias</span>
+                <a class="text-link" href="#agendamento" data-service="Lash Lifting">Quero agendar <svg aria-hidden="true"><use href="#icon-arrow" /></svg></a>
+              </div>
+            </article>
+
+            <article class="service-card reveal" data-category="cilios">
+              <div class="service-image"><img src="assets/images/servico-cilios-sirena.jpg" alt="Extensão de cílios com efeito Sirena" width="894" height="1280" loading="lazy" /></div>
+              <div class="service-content">
+                <span class="service-index">07</span>
+                <span class="service-category">Cílios</span>
+                <h3>Efeito Sirena</h3>
+                <p>Efeito delicado que simula um delineado, com preenchimento somente até o meio dos olhos.</p>
+                <span class="service-duration"><svg aria-hidden="true"><use href="#icon-clock" /></svg>Manutenção em até 20 dias</span>
+                <a class="text-link" href="#agendamento" data-service="Extensão de Cílios — Efeito Sirena">Quero agendar <svg aria-hidden="true"><use href="#icon-arrow" /></svg></a>
+              </div>
+            </article>
+
+            <article class="service-card reveal" data-category="cilios">
+              <div class="service-image"><img src="assets/images/servico-volume-brasileiro-marrom.jpg" alt="Extensão de cílios em volume brasileiro marrom" width="960" height="1280" loading="lazy" /></div>
+              <div class="service-content">
+                <span class="service-index">08</span>
+                <span class="service-category">Cílios</span>
+                <h3>Volume Brasileiro Marrom</h3>
+                <p>Extensão delicada e harmoniosa, ideal especialmente para ruivas e loiras.</p>
+                <span class="service-duration"><svg aria-hidden="true"><use href="#icon-clock" /></svg>Manutenção em até 20 dias</span>
+                <a class="text-link" href="#agendamento" data-service="Volume Brasileiro Marrom">Quero agendar <svg aria-hidden="true"><use href="#icon-arrow" /></svg></a>
+              </div>
+            </article>
+
+            <article class="service-card reveal" data-category="cilios">
+              <div class="service-image"><img src="assets/images/servico-cilios-fox.jpg" alt="Extensão de cílios com efeito Fox" width="720" height="1280" loading="lazy" /></div>
+              <div class="service-content">
+                <span class="service-index">09</span>
+                <span class="service-category">Cílios</span>
+                <h3>Efeito Fox</h3>
+                <p>Efeito marcante que cria o olhar de raposa, indicado para quem busca cílios expressivos e cheios de personalidade.</p>
+                <span class="service-duration"><svg aria-hidden="true"><use href="#icon-clock" /></svg>Manutenção em até 20 dias</span>
+                <a class="text-link" href="#agendamento" data-service="Extensão de Cílios — Efeito Fox">Quero agendar <svg aria-hidden="true"><use href="#icon-arrow" /></svg></a>
+              </div>
+            </article>
+
+            <article class="service-card reveal" data-category="cilios">
+              <div class="service-image"><img src="assets/images/servico-volume-brasileiro.jpg" alt="Extensão de cílios em volume brasileiro natural" width="614" height="592" loading="lazy" /></div>
+              <div class="service-content">
+                <span class="service-index">10</span>
+                <span class="service-category">Cílios</span>
+                <h3>Volume Brasileiro</h3>
+                <p>Efeito ideal para quem valoriza naturalidade e prefere cílios com volume mais leve.</p>
+                <span class="service-duration"><svg aria-hidden="true"><use href="#icon-clock" /></svg>Manutenção em até 20 dias</span>
+                <a class="text-link" href="#agendamento" data-service="Extensão de Cílios — Volume Brasileiro">Quero agendar <svg aria-hidden="true"><use href="#icon-arrow" /></svg></a>
+              </div>
+            </article>
+
           </div>
         </div>
       </section>
@@ -238,20 +324,20 @@
           </div>
           <div class="results-grid">
             <figure class="result-card result-large reveal">
-              <img src="assets/images/servico-sobrancelhas.jpg" alt="Resultado natural em design de sobrancelhas" width="191" height="118" loading="lazy" />
-              <figcaption>Design que respeita seus traços</figcaption>
+              <img src="assets/images/servico-lash-lifting.jpg" alt="Comparação do antes e depois de Lash Lifting" width="1254" height="1254" loading="lazy" />
+              <figcaption>Curvatura natural com Lash Lifting</figcaption>
             </figure>
             <figure class="result-card reveal">
-              <img src="assets/images/servico-labios.jpg" alt="Resultado de micropigmentação labial" width="191" height="118" loading="lazy" />
-              <figcaption>Cor e contorno na medida</figcaption>
+              <img src="assets/images/servico-nano-fios.jpg" alt="Resultado natural de micropigmentação Nano Fios" width="960" height="1280" loading="lazy" />
+              <figcaption>Realismo fio a fio</figcaption>
             </figure>
             <figure class="result-card reveal">
-              <img src="assets/images/servico-delineado.jpg" alt="Resultado de delineado preciso" width="191" height="118" loading="lazy" />
-              <figcaption>Expressão com praticidade</figcaption>
+              <img src="assets/images/servico-volume-brasileiro-marrom.jpg" alt="Resultado de extensão de cílios marrom" width="960" height="1280" loading="lazy" />
+              <figcaption>Leveza em tons de marrom</figcaption>
             </figure>
             <figure class="result-card result-wide reveal">
-              <img src="assets/images/servico-pele.jpg" alt="Pele iluminada após procedimento" width="222" height="118" loading="lazy" />
-              <figcaption>Cuidado que renova</figcaption>
+              <img src="assets/images/servico-brow-lamination.jpg" alt="Resultado de Brow Lamination com fios definidos" width="1280" height="720" loading="lazy" />
+              <figcaption>Fios alinhados e definidos</figcaption>
             </figure>
           </div>
         </div>
@@ -308,10 +394,20 @@
               <label for="servico">Serviço de interesse <span aria-hidden="true">*</span></label>
               <select id="servico" name="servico" required aria-describedby="servico-error">
                 <option value="">Selecione um serviço</option>
-                <option>Design de Sobrancelhas</option>
-                <option>Micropigmentação Labial</option>
-                <option>Delineado a Laser</option>
-                <option>Limpeza de Pele</option>
+                <optgroup label="Sobrancelhas">
+                  <option>Design de Sobrancelhas</option>
+                  <option>Design com Henna</option>
+                  <option>Tintura/Coloração</option>
+                  <option>Nano Fios</option>
+                  <option>Brow Lamination</option>
+                </optgroup>
+                <optgroup label="Cílios">
+                  <option>Lash Lifting</option>
+                  <option>Extensão de Cílios — Efeito Sirena</option>
+                  <option>Volume Brasileiro Marrom</option>
+                  <option>Extensão de Cílios — Efeito Fox</option>
+                  <option>Extensão de Cílios — Volume Brasileiro</option>
+                </optgroup>
                 <option>Avaliação personalizada</option>
               </select>
               <small class="field-error" id="servico-error" aria-live="polite"></small>

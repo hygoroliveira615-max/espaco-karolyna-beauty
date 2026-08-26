@@ -79,6 +79,35 @@ if (prefersReducedMotion || !("IntersectionObserver" in window)) {
   revealItems.forEach((item) => revealObserver.observe(item));
 }
 
+const serviceFilters = [...document.querySelectorAll("[data-filter]")];
+const serviceCards = [...document.querySelectorAll(".service-card[data-category]")];
+const filterStatus = document.querySelector("[data-filter-status]");
+const filterLabels = {
+  todos: "todos os 10 serviços",
+  sobrancelhas: "5 serviços de sobrancelhas",
+  cilios: "5 serviços de cílios",
+};
+
+serviceFilters.forEach((button) => {
+  button.addEventListener("click", () => {
+    const selectedFilter = button.dataset.filter;
+
+    serviceFilters.forEach((filterButton) => {
+      const isSelected = filterButton === button;
+      filterButton.classList.toggle("is-active", isSelected);
+      filterButton.setAttribute("aria-pressed", String(isSelected));
+    });
+
+    serviceCards.forEach((card) => {
+      const shouldShow = selectedFilter === "todos" || card.dataset.category === selectedFilter;
+      card.hidden = !shouldShow;
+      if (shouldShow) card.classList.add("is-visible");
+    });
+
+    filterStatus.textContent = `Exibindo ${filterLabels[selectedFilter]}.`;
+  });
+});
+
 document.querySelectorAll("[data-service]").forEach((link) => {
   link.addEventListener("click", () => {
     const select = document.querySelector("#servico");
