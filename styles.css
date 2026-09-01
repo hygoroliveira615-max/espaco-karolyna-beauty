@@ -142,35 +142,17 @@ svg {
 }
 
 .brand {
-  position: relative;
-  display: inline-grid;
-  min-width: 132px;
-  min-height: 56px;
-  place-content: center;
-  color: #6f5a45;
-  line-height: 1;
-  text-align: center;
+  display: inline-flex;
+  width: 154px;
+  min-height: 60px;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
 }
 
-.brand-small {
-  display: block;
-  font-size: 0.56rem;
-  font-weight: 500;
-  letter-spacing: 0.26em;
-  text-transform: uppercase;
-}
-
-.brand-name {
-  display: block;
-  margin: 1px 0;
-  font-family: "Playfair Display", Georgia, serif;
-  font-size: 1.75rem;
-  font-weight: 400;
-  letter-spacing: -0.05em;
-}
-
-.brand-beauty {
-  letter-spacing: 0.35em;
+.brand-logo {
+  width: 100%;
+  height: auto;
 }
 
 .desktop-nav,
@@ -1331,9 +1313,16 @@ textarea:focus {
   align-items: center;
 }
 
-.brand-light {
-  width: fit-content;
-  color: #d1b180;
+.footer-brand {
+  display: block;
+  width: min(230px, 100%);
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.footer-brand img {
+  width: 100%;
+  height: auto;
 }
 
 .footer-grid p {
@@ -1454,6 +1443,7 @@ textarea:focus {
 }
 
 @media (min-width: 1024px) {
+  .brand { width: 172px; }
   .desktop-nav { display: flex; align-items: center; gap: 30px; }
   .nav-link { position: relative; min-height: 44px; padding-top: 13px; color: #36322d; font-size: .67rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; }
   .nav-link::after { position: absolute; right: 50%; bottom: 4px; left: 50%; height: 1px; background: var(--color-primary); content: ""; transition: right 180ms ease, left 180ms ease; }
