@@ -83,9 +83,9 @@ const serviceFilters = [...document.querySelectorAll("[data-filter]")];
 const serviceCards = [...document.querySelectorAll(".service-card[data-category]")];
 const filterStatus = document.querySelector("[data-filter-status]");
 const filterLabels = {
-  todos: "todos os 10 serviços",
+  todos: "todos os 11 serviços",
   sobrancelhas: "5 serviços de sobrancelhas",
-  cilios: "5 serviços de cílios",
+  cilios: "6 serviços de cílios",
 };
 
 serviceFilters.forEach((button) => {
